@@ -10,6 +10,12 @@ public class BouncyCube : MonoBehaviour
         
     }
 
+    public void Bounce() 
+    { 
+    
+    }
+
+
     // Update is called once per frame
     void Update()
     {
