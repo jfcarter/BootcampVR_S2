@@ -7,7 +7,7 @@ public class BallShooter : MonoBehaviour
     private float timer;
     
     public GameObject ballPrefab;
-    public float launchForce = 10;
+    public float launchForce = 45;
     public float timeBetweenShots = 5;
 
     public void ShootBall()
