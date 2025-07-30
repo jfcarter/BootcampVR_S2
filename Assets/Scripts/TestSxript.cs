@@ -30,6 +30,26 @@ public class TestSxript : MonoBehaviour
         Debug.Log("Destroyed");
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("TriggerEnter");
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        Debug.Log("TriggerExit");
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("CollisionEnter");
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        Debug.Log("CollisionExit");
+    }
+
     private void FixedUpdate()
     {
         
@@ -38,6 +58,6 @@ public class TestSxript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Update");
+       
     }
 }
