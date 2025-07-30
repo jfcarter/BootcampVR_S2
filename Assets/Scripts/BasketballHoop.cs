@@ -8,7 +8,7 @@ public class BasketballHoop : MonoBehaviour
     // Start is called before the first frame update
 
     public float points;
-
+    public AudioSource audio;
     void Start()
     {
         
@@ -16,7 +16,7 @@ public class BasketballHoop : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "BasketBall")
+        if (other.gameObject.name.Contains("BasketBall"))
         {
             OnPointScored();
 
@@ -28,6 +28,7 @@ public class BasketballHoop : MonoBehaviour
     {
         Debug.Log("PointScored");
         points += 1;
+        audio.Play();
     }
 
     // Update is called once per frame
