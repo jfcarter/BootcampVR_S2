@@ -48,7 +48,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6e9523acd1fb346a52cdb39857af1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 9175070444938801464}
   timeToDestroy: 30
+  reboundForceMultiplier: 1.2
 --- !u!33 &1220488209793141029
 MeshFilter:
   m_ObjectHideFlags: 0
